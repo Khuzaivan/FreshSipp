@@ -9,14 +9,29 @@
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="logo">FreshSip</div>
-    <ul class="nav-menu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#produk">Produk</a></li>
-    </ul>
-  </nav>
+ <nav class="navbar">
+  <div class="logo">FreshSip</div>
+
+  <ul class="nav-menu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#produk">Produk</a></li>
+  </ul>
+
+  <div class="hamburger" onclick="toggleSidebar()">
+    ☰
+  </div>
+  <div id="overlay" class="overlay" onclick="toggleSidebar()"></div>
+
+</nav>
+
+<!-- SIDEBAR MOBILE -->
+<div id="sidebar" class="sidebar">
+  <a href="#home" onclick="toggleSidebar()">Home</a>
+  <a href="#about" onclick="toggleSidebar()">About Us</a>
+  <a href="#produk" onclick="toggleSidebar()">Produk</a>
+</div>
+
 
   <!-- HERO -->
   <section id="home" class="hero">

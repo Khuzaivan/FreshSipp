@@ -9,3 +9,9 @@ function orderNow() {
   const message = "Halo FreshSip, saya mau pesan minuman FreshSip";
   window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank");
 }
+
+function toggleSidebar() {
+  document.getElementById("sidebar").classList.toggle("active");
+  document.getElementById("overlay").classList.toggle("active");
+}
+
