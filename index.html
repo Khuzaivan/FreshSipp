@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreshSip - Minuman Segar Kekinian</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">FreshSip</div>
+    <ul class="nav-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#produk">Produk</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <h1>Segarkan Harimu Bersama <span>FreshSip</span> 🍹</h1>
+    <p>
+      Minuman kekinian dengan rasa premium dan harga ramah kantong.  
+      Cocok dinikmati kapan saja, di mana saja.
+    </p>
+    <button onclick="orderNow()">Pesan Sekarang</button>
+  </section>
+
+  <!-- ABOUT US -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+      <strong>FreshSip</strong> adalah usaha minuman yang menghadirkan
+      rasa berkualitas dengan harga terjangkau.
+      Kami menggunakan bahan pilihan untuk memberikan
+      pengalaman minum yang segar, nikmat, dan bikin nagih.
+    </p>
+    <p>
+      Tersedia berbagai varian favorit seperti matcha,
+      matcha latte, dan choco hazelnut yang siap menemani
+      aktivitas harianmu.
+    </p>
+  </section>
+
+  <!-- PRODUK -->
+  <section id="produk" class="produk">
+    <h2>Menu Andalan FreshSip</h2>
+    <p class="produk-desc">
+      Pilih varian favoritmu dan nikmati kesegarannya hanya dengan Rp 10.000!
+    </p>
+
+    <div class="produk-list">
+
+      <div class="card">
+        <img src="images/matcha.png" alt="Matcha">
+        <h3>Matcha</h3>
+        <p class="harga">Rp 10.000</p>
+        <p class="desc">Matcha premium dengan rasa segar dan sedikit pahit khas teh hijau.</p>
+        <button onclick="order('Matcha')">Pesan</button>
+      </div>
+
+      <div class="card">
+        <img src="images/matcha-latte.png" alt="Matcha Latte">
+        <h3>Matcha Latte</h3>
+        <p class="harga">Rp 10.000</p>
+        <p class="desc">Perpaduan matcha dan susu yang creamy dan lembut.</p>
+        <button onclick="order('Matcha Latte')">Pesan</button>
+      </div>
+
+      <div class="card">
+        <img src="images/choco-hazelnut.png" alt="Choco Hazelnut">
+        <h3>Choco Hazelnut</h3>
+        <p class="harga">Rp 10.000</p>
+        <p class="desc">Cokelat manis berpadu dengan aroma hazelnut yang menggoda.</p>
+        <button onclick="order('Choco Hazelnut')">Pesan</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 FreshSip</p>
+    <p>Order via WhatsApp: <strong>081222726808</strong></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
